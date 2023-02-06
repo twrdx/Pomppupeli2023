@@ -1,4 +1,5 @@
-
+let tausta;
+let donut;
 
 function preload() {
   tausta = loadImage('game-bg.png');
@@ -10,6 +11,9 @@ function setup() {
 }
 
 function draw() {
-  background(220);
+  image(tausta, 0, 0, 500, 500);
+	image(tausta, 500, 0, 500, 500);
+	image(tausta, 1000, 0, 500, 500);
 }
+
 
