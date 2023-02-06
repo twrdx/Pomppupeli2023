@@ -1,9 +1,12 @@
 let tausta;
 let donut;
+let bouncer;
 
 function preload() {
-  tausta = loadImage('game-bg.png');
+  bg = loadImage('game-bg.png');
 	donut = loadImage('donut3.png');
+	bouncer = loadImage('bouncer.png');
+	
 }
 
 function setup() {
@@ -11,9 +14,11 @@ function setup() {
 }
 
 function draw() {
-  image(tausta, 0, 0, 500, 500);
-	image(tausta, 500, 0, 500, 500);
-	image(tausta, 1000, 0, 500, 500);
+  image(bg, 0, 0, 500, 500);
+	image(bg, 500, 0, 500, 500);
+	image(bg, 1000, 0, 500, 500);
 }
 
-
+function create_bouncer() {
+	image(bouncer, mouseX, )
+}
